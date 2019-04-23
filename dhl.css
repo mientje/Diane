@@ -1,0 +1,426 @@
+/*8@font-face {
+    font-family: appelen;
+    src: url("HomemadeApple.ttf");
+}*/
+html {
+    scroll-behavior: smooth;
+}
+body {
+  font-size: 16px;
+  font-family: 'Amiri', serif;
+  background-color: lemonchiffon;
+  color:#511515;
+}
+header {
+    padding-top: 15px;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    background-color: lemonchiffon;
+    height: 185px;
+}
+h1 {
+  text-align: center;
+  font-size: 3em;
+  font-weight: 400;
+  font-family: 'Homemade Apple', cursive;
+  position: absolute;
+  top: 1.8em;
+  left: 2.5em;
+  color: #511515;
+  z-index:3;
+}
+#interior {
+    display: block;
+    height: auto;
+    padding-top: 10em;
+    margin: 0 auto;
+}
+h2 {
+    font-weight: 600;
+    font-style: italic;
+}
+li {
+    text-align: center;
+    font-size: 1.2em;
+}
+li.mobile {
+    display: none;
+}
+.navbar-default .navbar-nav > li > a {
+    color:#511515;
+    padding: 15px;
+}
+.navbar-default .navbar-nav > li > a:hover {
+    background-color: #e6dd8b;
+    border-radius:5px;
+    box-shadow:  3px 3px 3px #A89B24;
+    margin: 0 auto;
+    max-width: 120px;
+}
+.container, .navbar-header, .navbar.navbar-default, #houten_lepel_nav {
+    background-color: lemonchiffon;
+}
+/*https://stackoverflow.com/questions/38572765/how-to-remove-the-border-bottom-from-bootstrap-navbar*/
+.navbar.navbar-default, .navbar-collapse {
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #511515;
+    border-color: #511515;
+}
+.navbar-header, .navbar-default .navbar-toggle, .navbar-default .navbar-toggle:focus {
+    border-color: #511515;
+    background-color: lemonchiffon;
+}
+.navbar.navbar-default, .navbar-toggle:hover {
+    background-color: #e6dd8b;
+}
+.navbar-brand {
+    padding: 15px 0;
+}
+#diane {
+  width: 25%;
+  height: auto;
+  float: right;
+  margin-left: 1.5em;
+  margin-bottom: 20px;
+}
+#top_floor  {
+  width: 25%;
+  height: auto;
+  float:left;
+  margin-right: 1.5em;
+  position: relative;
+}
+#adres, adres > h3 {
+    text-align: center;
+}
+#map {
+    height: 30em;  /* The height is 400 pixels */
+    width: 100%;
+    background: white;
+}
+#zondag {
+    line-height: 1em;
+}
+h3 {
+  text-align: center;
+}
+hr {
+    border: 1px solid rgba(81, 21, 21, 0.54);
+}
+.thumbnail > img.kort {
+    max-height: 30%;
+}
+.duimnagel {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  margin: 5px auto;
+  border: 2px #511515 solid;
+  border-radius: 10px;
+}
+.duimnagel > a {
+  width: 150px;
+  height: 150px;
+}
+.duimnagel > a > img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%,-50%);
+}
+.duimnagel > a > img.portrait {
+  width: 100%;
+  height: auto;
+}
+#bruin, #activities, #fotos {
+  margin-top: -184px;
+  padding-top: 184px;
+}
+#contact {
+    padding-bottom: 120px;
+}
+#flexcontact {
+  display: flex;
+  justify-content: space-around;
+}
+#flexadres, #flexopeningsuren {
+    flex-basis: 30%;
+    flex-shrink: 1.3;
+}
+#flexadres {
+    padding-top: 25px;
+}
+#flexmap {
+    flex-basis: 40%;
+    flex-shrink: 1;
+    height:300px;
+}
+#map {
+    width: 100%;
+    height: 300px;
+}
+#outsidetable {
+    margin: 0 auto;
+}
+#outsidetable > td, th {
+    padding: 5px;
+}
+caption {
+    text-align: center;
+    color: #511515;
+}
+#insidetable {
+    display: none;
+}
+.adresp {
+  text-align: center;
+  line-height:9px;
+}
+@-moz-document url-prefix() {
+  #adres {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  h1 {
+    left: 2.5em;
+  }
+}
+@media(max-width: 1000px) {
+    #insidetable {
+        display: table;
+        margin: 0 auto;
+    }
+    #insidetable > th {
+        text-align : inherit;
+    }
+    #flexopeningsuren {
+        display: none;
+    }
+    #flexmap, #map {
+        flex-basis: 70%;
+        height: 370px;
+    }
+    #flexadres {
+        padding-top: 0;
+        margin-right: 15px;
+    }
+    #flexcontact {
+        margin-right: 30px;
+    }
+}
+@media(max-width: 850px) {
+  #diane, #top_floor {
+    width: 40%;
+  }
+}
+@media(min-width: 765px) {
+    ul.nav.navbar-nav {
+        display:flex;
+        justify-content: flex-end;
+        float:none;
+    }
+}
+@media(max-width: 766px) {
+    #houten_lepel_nav {
+        z-index: 1;
+        position: relative;
+        top: 7.5em;
+    }
+    #bruin, #activities, #fotos {
+      margin: -150px 0 0 0;
+      padding-top: 170px;
+    }
+    #contact {
+        margin-bottom:-160px;
+        padding-bottom: 160px;
+    }
+    @-moz-document url-prefix() {
+      #contact {
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+    }
+}
+@media(max-width: 650px) {
+    h1 {
+        font-size: 2.5em;
+        top: 2.3em;
+        left: 3em;
+    }
+    p {
+      line-height: 1.3;
+    }
+    #flexvoeter {
+      flex-direction: column;
+    }
+    #flexcontact {
+      display:flex;
+      padding-bottom: 20px;
+      margin: 0;
+    }
+    #flexadres, #flexopeningsuren {
+      flex-basis: 50%;
+    }
+    #flexmap {
+      margin: 0;
+    }
+    #diane, #top_floor {
+        width: 50%;
+    }
+    h2 {
+        font-size: 23px;
+    }
+}
+@media(max-width: 560px) {
+    #header-img {
+        width: 100%;
+    }
+    .navbar-brand {
+        width: 195px;
+    }
+    h1 {
+        font-size: 2.4em;
+        top: 1.65em;
+        left: 2.5em;
+    }
+    #houten_lepel_nav {
+        top: 6em;
+    }
+    #flexcontact {
+        flex-direction: column;
+    }
+    #flexadres {
+      margin-left: 20px;
+      padding-bottom: 20px;
+    }
+    header {
+      height: 131px;
+    }
+    #interior {
+      padding-top: 9em;
+    }
+    #contact {
+      padding-top: 110px;
+      margin-top: -110px;
+    }
+    #bruin, #activities, #fotos {
+      margin: -110px 0 0 0;
+      padding-top: 110px;
+    }
+    li.mobile {
+        display: inherit;
+    }
+    #flexmap {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        padding-top: 130px;
+        margin-top: -130px;
+    }
+}
+@media(max-width: 520px) {
+    h1 {
+        font-size: 2.2em;
+        top: 1.9em;
+    }
+    #diane, #top_floor {
+        width: 100%;
+    }
+    #top_floor {
+        padding-bottom: 20px;
+    }
+}
+@media(max-width: 470px) {
+    h1 {
+        font-size: 2em;
+        top: 1.75em;
+        left: 2.5em;
+    }
+    #houten_lepel_nav {
+        top: 5.5em;
+    }
+    .navbar-brand {
+        width: 170px;
+    }
+}
+@media(max-width: 430px) {
+    h1 {
+        font-size: 1.7em;
+        top: 2.25em;
+        left: 3em;
+    }
+    #houten_lepel_nav {
+        top: 5em;
+    }
+    h2 {
+        font-size: 20px;
+    }
+}
+@media(max-width: 385px) {
+    h1 {
+        font-size: 1.5em;
+        top: 2em;
+        left: 2.8em;
+    }
+    .duimnagel {
+      width: 120px;
+      height: 120px;
+    }
+    .navbar-brand {
+        width: 140px;
+    }
+}
+@media(max-width: 345px) {
+    h1 {
+        font-size: 1.4em;
+        top: 2.2em;
+        left: 3em;
+    }
+    #houten_lepel_nav {
+        top: 4em;
+    }
+}
+@media(max-width: 315px) {
+    body {
+        font-size: 15px;
+    }
+    h1 {
+        font-size: 1.3em;
+        top: 2.6em;
+        left: 3.3em;
+    }
+    h2 {
+        font-size: 18px;
+    }
+}
+@media(max-width: 285px) {
+    h1 {
+        font-size: 1.2em;
+        top: 3.2em;
+        left: 3.7em;
+    }
+    #houten_lepel_nav {
+        top: 4em;
+    }
+}
+@media(max-width: 250px) {
+    .navbar-brand {
+        width: 120px;
+    }
+    h1 {
+        top: 2.4em;
+        left: 3em;
+    }
+    header {
+      height: 100px;
+    }
+}
