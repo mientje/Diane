@@ -1,8 +1,3 @@
-/*8@font-face {
-    font-family: appelen;
-    src: url("HomemadeApple.ttf");
-}*/
-
 html {
     scroll-behavior: smooth;
 }
@@ -42,6 +37,15 @@ main {
 h2 {
     font-weight: 600;
 }
+ul.nav.navbar-nav {
+  padding-top: 1em;
+}
+/* als ul nav verdwijnt moet de hoogte behouden worden of er komt een witte achtergrond uit*/
+div#houten_lepel_nav.navbar-collapse.collapsing  {
+  height:70px !important;
+}
+
+
 li {
     text-align: center;
     font-size: 1.2em;
@@ -59,7 +63,7 @@ li.mobile {
     border-radius:5px;
     box-shadow:  3px 3px 3px #A89B24;
     margin: 0 auto;
-    max-width: 120px;
+    max-width: 140px;
 }
 .container, .navbar-header, .navbar.navbar-default, #houten_lepel_nav {
     background-color: lemonchiffon;
@@ -145,16 +149,17 @@ hr {
   width: 100%;
   height: auto;
 }
-#bruin, #activities, #fotos {
+#bruin, #activities, #fotos, #contact  {
   margin-top: -184px;
   padding-top: 184px;
 }
 #contact {
-    padding-bottom: 120px;
+    padding-bottom: 150px;
 }
 #flexcontact {
   display: flex;
   justify-content: space-around;
+  padding: 1em 0;
 }
 #flexadres, #flexopeningsuren {
     flex-basis: 30%;
