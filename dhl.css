@@ -7,6 +7,9 @@ body {
   background-color: lemonchiffon;
   color:#511515;
 }
+.row {
+  padding-bottom: 3em;
+}
 header {
     position: fixed;
     z-index: 3;
@@ -44,8 +47,6 @@ ul.nav.navbar-nav {
 div#houten_lepel_nav.navbar-collapse.collapsing  {
   height:70px !important;
 }
-
-
 li {
     text-align: center;
     font-size: 1.2em;
@@ -149,12 +150,13 @@ hr {
   width: 100%;
   height: auto;
 }
-#bruin, #activities, #fotos, #contact  {
+#bruin, #activities, #fotos  {
   margin-top: -184px;
   padding-top: 184px;
 }
-#contact {
-    padding-bottom: 150px;
+#contact  {
+  padding-bottom: 350px;
+  margin-bottom:-350px;
 }
 #flexcontact {
   display: flex;
