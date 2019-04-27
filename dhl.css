@@ -12,12 +12,11 @@ body {
   color:#511515;
 }
 header {
-    padding-top: 15px;
     position: fixed;
     z-index: 3;
     width: 100%;
     background-color: lemonchiffon;
-    height: 185px;
+    height: 190px;
 }
 h1 {
   text-align: center;
@@ -35,6 +34,9 @@ h1 {
     height: auto;
     padding-top: 10em;
     margin: 0 auto;
+}
+main {
+  padding-top: 2em;
 }
 h2 {
     font-weight: 600;
