@@ -2,6 +2,7 @@
     font-family: appelen;
     src: url("HomemadeApple.ttf");
 }*/
+
 html {
     scroll-behavior: smooth;
 }
@@ -40,7 +41,6 @@ main {
 }
 h2 {
     font-weight: 600;
-    font-style: italic;
 }
 li {
     text-align: center;
@@ -50,6 +50,7 @@ li.mobile {
     display: none;
 }
 .navbar-default .navbar-nav > li > a {
+    font-family: 'Montserrat', sans-serif;
     color:#511515;
     padding: 15px;
 }
