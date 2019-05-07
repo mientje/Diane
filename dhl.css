@@ -159,8 +159,14 @@ hr {
   width: 100%;
   height: auto;
 }
+.container .row:nth-child(4) {
+	display: none;
+}
+ul.nav.navbar-nav li:nth-child(5) > a.nav-link {
+	display: none;
+}
 #carousel .carousel-inner .item > img {
-  max-height: 750px;
+  max-height: 700px;
   width: auto;
 }
 #carousel .carousel-inner .item > img {
@@ -285,15 +291,15 @@ caption {
         padding-bottom: 0;
       }
     }
-    #interiormobile.img-responsive {
-      display: block;
-    }
-    #interior {
-      display: none;
-    }
     .container-fluid >.row:first-child {
       margin-top: -2em;
     }
+		#interiormobile.img-responsive, .container .row:nth-child(4), ul.nav.navbar-nav li:nth-child(5) > a.nav-link {
+			display: block;
+		}
+		#interior, .container .row:nth-child(3), ul.nav.navbar-nav li:nth-child(4) > a.nav-link {
+			display: none;
+		}
 }
 @media(max-width: 650px) {
     h1 {
